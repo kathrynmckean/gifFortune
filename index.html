@@ -1,0 +1,58 @@
+<header class="header">
+  <h1>Fortune-bot 500</h1>
+</header>
+
+<div class="ContentWrapper">
+
+  <!--    <div class="soloQuestionFrame" id="soloQuestionFrame">
+                <div id="soloSearchBar">
+                  <input type="text">
+                  <button>ask</button>
+                </div>
+            </div>
+           -->
+  <p>Use a prompt to ask a question and discover your future</p>
+  <div class="gallery">
+
+    <div class="card" id="shouldI" onclick="handlePrompt('should I')">Should I...</div>
+    <div class="card" id="willI" onclick="handlePrompt('will I')">Will I...</div>
+    <div class="card" id="willThey" onclick="handlePrompt('will they')">
+      Will they...</div>
+  </div>
+
+  <div class="questionFrame" id="questionFrame">
+    <p id="prompt"></p>
+    <div id="searchBar"></div>
+  </div>
+
+</div>
+
+<div class="soloQuestionFrame">
+  <button class=soloQuestionButton onclick="handleSoloQuestion()">ask my own question</button>
+</div>
+
+<div class="gifFrame">
+
+  <div  id="responseFrame">
+    <div id="responseText"></div>
+  </div>
+
+  <img src="" alt="" id="gif">
+
+  <svg viewBox="-12 0 110 110" width="100%" height="100%">
+
+    <path d="M 16 80 C 0 110, 87 110, 72 80" style="fill: rgb(51, 21, 142);" stroke="black" stroke-width="2" fill="transparent" stroke-linecap="round" />
+    <path d="M 18 65 C 0 100, 87 100, 70 65" style="fill: rgb(27, 20, 160);" stroke="black" stroke-width="2" fill="transparent" stroke-linecap="round" />
+    <ellipse class="orb" style="fill:rgb(163, 203, 230);" stroke="black" stroke-width="2" cx="43" cy="43" rx="40" ry="40">
+    </ellipse>
+    <clipPath id="myCircle">
+      <ellipse class="orb" style="fill:rgb(163, 203, 230);" stroke="black" stroke-width="0" cx="43" cy="43" rx="39" ry="39">
+      </ellipse>
+    </clipPath>
+    <image width="85" clip-path="url(#myCircle)" height="85" href="" id="gif" opacity=".75"></image>
+  </svg>
+</div>
+
+</div>
+</body>
+<script src="app.js"></script>

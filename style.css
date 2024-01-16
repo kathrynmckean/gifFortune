@@ -1,0 +1,96 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: white;
+    background: radial-gradient(circle at 50% 60%, #8590d3, #1e013c);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font: 1em "Fira Sans", sans-serif;
+}
+
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.gallery {
+    display: flex;
+    gap: 8px;
+    margin: 10px 20%;
+      align-items: center;
+  justify-content: center;
+}
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    padding: 5px;
+    min-width: 100px;
+  max-width: 200px;
+    background-color: rgb(44, 19, 99);
+    transition: 0.6s ease-in-out;
+    flex: 2;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+    flex: 3;
+    cursor: pointer;
+  background-color: purple;
+}
+
+.questionFrame {
+  height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20%;
+    flex-direction: row;
+}
+
+.gifFrame {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20%;
+    flex-direction: column;
+    /* background-color: purple; */
+    /* background: radial-gradient(#e66465, #9198e5); */
+
+}
+
+#responseFrame {
+  position: absolute;
+  z-index: 1000;
+  background-color: purple;
+  border-radius: 45%;
+  top: 27em;
+  padding: 1em;
+  display: none;
+}
+
+
+.gifBorder {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+}
+
+#prompt {
+    margin: 10px;
+}
+
+.soloQuestionButton {
+    color: white;
+  background-color: rgb(44, 19, 99);
+}
