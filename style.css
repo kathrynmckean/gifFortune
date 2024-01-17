@@ -69,15 +69,22 @@ header {
 
 }
 
+
+#responseText {
+  color: black;
+  font-size: .75em;
+}
 #responseFrame {
   position: absolute;
   z-index: 1000;
-  background-color: purple;
+  background-color: white;
+  box-shadow: 0px 0px 10px 10px #fff;
   border-radius: 45%;
-  top: 27em;
-  padding: 1em;
-  display: none;
+  top: 26em;
+  padding: .5em;
+  visibility: hidden;
 }
+
 
 
 .gifBorder {
