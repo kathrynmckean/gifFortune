@@ -97,6 +97,8 @@ const fortune = () => {
 
   num = Math.floor(Math.random() * 100);
   let findResponseText = document.getElementById(responseText);
+    let findResponseFrame = document.querySelector('#responseFrame');
+  findResponseFrame.style.visibility = 'visible';
   // TODO: use a switch case here instead
   if (num > 70) {
     responseText.textContent = "Absolutely 100%";
